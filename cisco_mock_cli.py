@@ -93,7 +93,7 @@ def get_command_dict(raw_log):
             command = line.strip().split('`')[1]
             continue
         if command:
-            command_dict[command].append(line.strip())
+            command_dict[command].append(line.rstrip())
     return command_dict
 
 
